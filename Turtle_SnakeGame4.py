@@ -7,7 +7,7 @@ class S_Board(Turtle):
         self.high_score = 0
         self.penup()
         self.color("white")
-        with open(r"D:\Career\Python\Python-Projects\Snake Game\data.txt") as data:
+        with open(r"data.txt") as data:
             high_score_str = data.read()
             if high_score_str:
                 self.high_score = int(high_score_str)
